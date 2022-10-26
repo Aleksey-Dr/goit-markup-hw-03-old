@@ -131,11 +131,6 @@ body {
   margin-top: 0;
   margin-bottom: 50px;
 }
-/* Styles for background */
-/* Class for header */
-.header-page {
-  background-color: #ececec;
-}
 /* Hero section */
 /* Backgroung hero-section */
 .hero {
@@ -190,6 +185,9 @@ body {
 /* Hang section */
 /* Styles of the Hang section */
 .hang {
+  /* Geometry */
+  /* Outline */
+  outline: 2px solid green;
   padding-top: 94px;
 }
 .hang-list .hang-title {
@@ -217,20 +215,30 @@ body {
 }
 /* What are we doing section */
 .we-doing {
-  padding: 118px;
+  /* Geometry */
+  /* Outline */
+  outline: 2px solid blue;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /* Our Team section */
 .our-team {
   background-color: #f5f4fa;
+  /* Geometry */
   /* Outline */
   outline: 2px solid blue;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .our-team p {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
+  /* Geometry */
   /* Outline */
   outline: 2px solid red;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .our-names {
   color: #212121;
@@ -239,14 +247,27 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  /* Geometry */
   /* Outline */
   outline: 2px solid red;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.container-team {
+  background-color: #ffffff;
+  /* Geometry */
+  /* Outline */
+  outline: 2px solid green;
+  padding-bottom: 30px;
 }
 /* Footer */
 .footer-back {
   background-color: #2f303a;
+  /* Geometry */
   /* Outline */
   outline: 2px solid red;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address-footer .link {
   color: #ffffff;
@@ -276,13 +297,21 @@ body {
 /* Portfolio page */
 /* Styles for title sections Prtfolio */
 /* Hero section Prtfolio */
+.portfolio {
+  /* Geometry */
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .container-title {
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  /* Geometry */
   /* Outline */
-  outline: 2px solid red;
+  outline: 2px solid green;
+  margin-top: 0;
+  margin-bottom: 4px;
 }
 .container-portfolio .link {
   color: var(--primary-text-color);
@@ -291,8 +320,11 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  /* Geometry */
   /* Outline */
   outline: 2px solid red;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 /* Buttons system */
 .filter-button {
@@ -305,8 +337,10 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  /* Geometry */
   /* Outline */
   outline: 2px solid red;
+  margin-bottom: 20px;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -319,4 +353,8 @@ body {
 } */
 .container-border > li {
   border: 1px solid #eeeeee;
+  /* Geometry */
+  /* Outline */
+  padding-bottom: 20px;
+  margin-top: 30px;
 }

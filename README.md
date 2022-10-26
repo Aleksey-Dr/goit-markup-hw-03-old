@@ -47,3 +47,41 @@ Repository for homework number 3
 13. Add .we-doing class to the "What are we doing" section.
 14. Add to .we-doing class:
     padding: 118px.
+
+26/10/2022
+
+1. Fixed the name to .headrt-page class.
+2. Add to the .header-page class:
+   padding-top: 24px;
+   padding-bottom: 25px;
+3. Fixed the property value in the .we-doing class:
+   padding: 118px; to padding-top: 94px;
+4. Added to the .we-doing class a padding-bottom property whis value 94px.
+5. Added to the .our-names class:
+   margin-top: 30px;
+   margin-bottom: 10px;
+6. Add to .our-team p class:
+   margin-top: 0;
+   margin-bottom: 0;
+7. Add .our-team class:
+   padding-top: 94px;
+   padding-bottom: 94px;
+8. Add .container-team class to "Our-team" section.
+9. Add to .container-team class:
+   background-color: #ffffff;
+   padding-bottom: 30px;
+10. Add to .footer-back class:
+    padding-top: 60px;
+    padding-bottom: 60px;
+11. Added a .portfolio class for the "Hero" saction in the "Portfolio" page.
+12. Added to the .portfolio class:
+    padding-top: 94px;
+    padding-bottom: 94px;
+13. Added to the .filter-button class:
+    margin-bottom: 20px;
+14. Added to .container-title class:
+    margin-top: 0;
+    margin-bottom: 4px;
+15. Added to the .container-border class:
+    padding-bottom: 20px;
+    margin-top: 30px;
