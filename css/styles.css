@@ -1,3 +1,13 @@
+/* All */
+/* Загальна блокова модель */
+html {
+  box-sizing: border-dox;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -8,10 +18,23 @@ body {
   background-color: #ffffff;
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
+  /* Remove default value margin: 8px; */
+  margin: 0;
+}
+/* Size container */
+.container {
+  /* Outline */
+  outline: 2px solid blue;
+  width: 1200px;
+  /* Centering */
+  margin: 0 auto;
 }
 /* Class-utility .list - прибирає маркери у списках */
 .list {
   list-style: none;
+  /* Geometry */
+  padding: 0;
+  margin: 0;
 }
 /* Class-utility .link - прибирає підкреслення у посиланнях (in logo) */
 .link-decoration a {
@@ -22,22 +45,22 @@ body {
 .logo {
   color: #000000;
   font-family: "Raleway", sans-serif;
-  /* Виправлення ДЗ. Видалена властивість за замовчуванням font-style: normal; */
   font-weight: 700;
   font-size: 26px;
-  /* Виправлення ДЗ. Властивість line-height: зазначено без "em" */
   line-height: 1.19;
   letter-spacing: 0.03em;
+  /* Outline */
+  outline: 2px solid red;
 }
 .logo-footer {
   color: #ffffff;
   font-family: "Raleway", sans-serif;
-  /* Виправлення ДЗ. Видалена властивість за замовчуванням font-style: normal; */
   font-weight: 700;
   font-size: 26px;
-  /* Виправлення ДЗ. Властивість line-height: зазначено без "em" */
   line-height: 1.19;
   letter-spacing: 0.03em;
+  /* Outline */
+  outline: 2px solid red;
 }
 .logo-web {
   color: #2196f3;
@@ -54,15 +77,25 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* Styles for background */
+/* Class for header */
+.header-page {
+  background-color: #ececec;
+  /* Geometry */
+  /* Outline */
+  outline: 2px solid green;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 /* Styles links in header */
 .nav-ul-site .link {
   color: var(--title-text-color);
-  /* Виправлення ДЗ. Видалена властивість за замовчуванням font-style: normal; */
   font-weight: 500;
   font-size: 14px;
-  /* Виправлення ДЗ. Властивість line-height: зазначено без "em" */
   line-height: 1.14;
   letter-spacing: 0.02em;
+  /* Outline */
+  outline: 2px solid red;
 }
 .nav-ul-site .link:hover,
 .nav-ul-site .link:focus {
@@ -73,99 +106,162 @@ body {
 }
 .header-contacts .link {
   color: var(--primary-text-color);
-  /* Виправлення ДЗ. Видалена властивість за замовчуванням font-style: normal; */
   font-weight: 500;
   font-size: 14px;
-  /* Виправлення ДЗ. Властивість line-height: зазначено без "em" */
   line-height: 1.14;
   letter-spacing: 0.02em;
+  /* Outline */
+  outline: 2px solid red;
 }
 .header-contacts .link:hover,
 .header-contacts .link:focus {
   color: var(--accent-color);
 }
+/* The Studio page */
 /* Styles for title sections Studio */
+.saction-title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  /* Geometry */
+  /* Outline */
+  outline: 2px solid red;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+/* Styles for background */
+/* Class for header */
+.header-page {
+  background-color: #ececec;
+}
+/* Hero section */
+/* Backgroung hero-section */
+.hero {
+  background-color: #2f303a;
+  /* Geometry */
+  /* Outline */
+  outline: 2px solid blue;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 /* Hero section Studio */
 .hero-title {
   color: #ffffff;
-  /* Виправлення ДЗ. Видалена властивість за замовчуванням font-style: normal; */
   font-weight: 900;
   font-size: 44px;
-  /* Виправлення ДЗ. Властивість line-height: зазначено без "em" */
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  /* Geometry */
+  /* Outline */
+  outline: 2px solid red;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
-/* Button in hero section */
-.button-title {
+.hero-button {
+  background-color: #2196f3;
+  border-color: #2196f3;
+  cursor: pointer;
+  /* For title */
   color: #ffffff;
-  /* Виправлення ДЗ. Додано властивість font-family: inherit; для наслідування шрифту від <body> */
   font-family: inherit;
-  /* Виправлення ДЗ. Видалена властивість за замовчуванням font-style: normal; */
   font-weight: 700;
   font-size: 16px;
-  /* Виправлення ДЗ. Властивість line-height: зазначено без "em" */
   line-height: 1.88;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  /* Geometry */
+  /* outline */
+  outline: 2px solid red;
+  /* Rounding */
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin: auto;
 }
-.saction-title {
-  color: var(--title-text-color);
-  /* Виправлення ДЗ. Видалена властивість за замовчуванням font-style: normal; */
-  /* Виправлення ДЗ. Видалена для h властивість за замовчуванням font-weight: 700; */
-  font-size: 36px;
-  /* Виправлення ДЗ. Властивість line-height: зазначено без "em" */
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
 }
-.our-names {
-  color: #212121;
-  /* Виправлення ДЗ. Видалена властивість за замовчуванням font-style: normal; */
-  font-weight: 500;
-  font-size: 16px;
-  /* Виправлення ДЗ. Властивість line-height: зазначено без "em" */
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
+/* Hang section */
 /* Styles of the Hang section */
+.hang {
+  padding-top: 94px;
+}
 .hang-list .hang-title {
   color: var(--title-text-color);
-  /* Виправлення ДЗ. Видалена властивість за замовчуванням font-style: normal; */
-  /* Виправлення ДЗ. Видалена для h властивість за замовчуванням font-weight: 700; */
   font-size: 14px;
-  /* Виправлення ДЗ. Властивість line-height: зазначено без "em" */
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  /* Geometry */
+  /* Outline */
+  outline: 2px solid red;
+  margin-top: 0;
+  margin-bottom: 10;
 }
 .hang-list p {
   font-size: 14px;
-  /* Виправлення ДЗ. Властивість line-height: зазначено без "em" */
   line-height: 1.71;
   letter-spacing: 0.03em;
+  background-color: blue;
+  /* Geometry */
+  /* Outline */
+  outline: 2px solid red;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* What are we doing section */
+.we-doing {
+  padding: 118px;
+}
+/* Our Team section */
+.our-team {
+  background-color: #f5f4fa;
+  /* Outline */
+  outline: 2px solid blue;
 }
 .our-team p {
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
+  /* Outline */
+  outline: 2px solid red;
+}
+.our-names {
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  /* Outline */
+  outline: 2px solid red;
+}
+/* Footer */
+.footer-back {
+  background-color: #2f303a;
+  /* Outline */
+  outline: 2px solid red;
 }
 .address-footer .link {
   color: #ffffff;
+  /* Outline */
+  outline: 2px solid red;
 }
 .address-footer a {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  /* Виправлення ДЗ. Властивість line-height: зазначено без "em" */
   line-height: 1.71;
   letter-spacing: 0.03em;
+  /* Outline */
+  outline: 2px solid red;
 }
-/* Виправлення ДЗ. Додано hover та focus для классу адреси у футері .address-footer a */
 .address-footer a:hover,
 .address-footer a:focus {
   color: var(--accent-color);
@@ -177,74 +273,46 @@ body {
 .contacts-footer:focus {
   color: var(--accent-color);
 }
-/* Styles for background */
-/* Class for header */
-.header-page {
-  background-color: #ececec;
-}
-/* Backgroung hero-section */
-.hero {
-  background-color: #2f303a;
-}
-.hero-button {
-  background-color: #2196f3;
-  border-color: #2196f3;
-  cursor: pointer;
-}
-/* Виправлення ДЗ. Додано hover та focus для классу кнопки .hero-button */
-.hero-button:hover,
-.hero-button:focus {
-  background-color: #188ce8;
-}
-.our-team {
-  background-color: #f5f4fa;
-}
-.footer-back {
-  background-color: #2f303a;
-}
-
-/* Styles of Portfolio page */
+/* Portfolio page */
 /* Styles for title sections Prtfolio */
 /* Hero section Prtfolio */
 .container-title {
   color: var(--title-text-color);
-  /* Виправлення ДЗ. Видалена властивість за замовчуванням font-style: normal; */
-  /* Виправлення ДЗ. Видалена для h властивість за замовчуванням font-weight: 700; */
   font-size: 18px;
-  /* Виправлення ДЗ. Властивість line-height: зазначено без "em" */
   line-height: 2;
   letter-spacing: 0.06em;
+  /* Outline */
+  outline: 2px solid red;
 }
 .container-portfolio .link {
   color: var(--primary-text-color);
 }
 .container-portfolio p {
   font-size: 16px;
-  /* Виправлення ДЗ. Властивість line-height: зазначено без "em" */
   line-height: 1.88;
   letter-spacing: 0.03em;
+  /* Outline */
+  outline: 2px solid red;
 }
 /* Buttons system */
 .filter-button {
   color: var(--title-text-color);
   background-color: #f5f4fa;
-  /* Виправлення ДЗ. Додано властивість font-family: inherit; для наслідування шрифту від <body> */
   font-family: inherit;
-  /* Виправлення ДЗ. Видалена властивість за замовчуванням font-style: normal; */
   font-weight: 500;
   font-size: 16px;
-  /* Виправлення ДЗ. Властивість line-height: зазначено без "em" */
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  /* Outline */
+  outline: 2px solid red;
 }
 .filter-button:hover,
 .filter-button:focus {
   color: #ffffff;
   background-color: #2196f3;
 }
-/* Виправлення ДЗ. Видалено рамку для <main> */
 /* Frame */
 /* .main-border {
   border: 1px solid #ececec;
