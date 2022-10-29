@@ -85,3 +85,46 @@ Repository for homework number 3
 15. Added to the .container-border class:
     padding-bottom: 20px;
     margin-top: 30px;
+
+29/10/2022
+
+1. Added a .imges class for img in the "Studio" and the "Portfolio" pages.
+2. Added the property "display" with value "block" to .imges class.
+3. /Flex 1/ Added a selector the .nav-ul-site class. Added the property "display" with value "flex" to the .nav-ul-site class.
+4. /Flex 2/ Added a selector the .nav-ul-site .item class. Added the property "margin-right" with value "50px".
+5. Edge geometry cleaning. Added the pseudo class :last-child. The .item class add the :last-child pseudo class with the property "margin-right:" with value "0".
+6. For user convenience added to .nav-ul-site .link:
+   display: block;
+   padding-top: 12px;
+   padding-bottom: 12px;
+7. Sorted styles properties into classes.
+8. /Flex 3/ Added .header-contacts class. Added to .header-contacts class:
+   display: flex;
+   margin-left: auto;
+9. /Flex 4/ Added a selector the .header-contacts .item class. Added the property "margin-right" with value "50px".
+10. For user convenience added to .header-contacts .link:
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+11. /Flex 5/ Added a .container-header class for <div> into <header>. Added to the .container-header class:
+    display: flex;
+    align-items: center;
+12. /Flex 6/ Added a .nav-main class for <nav> into <header>. Added to the .nav-main class:
+    display: flex;
+    align-items: center;
+13. Added to the .logo class:
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 93px;
+14. Fixed the value property .header-page class:
+15. /Flex 7/ Added a .hang-list class. Added the value property .hang-list class:
+    display: flex;
+16. Added a .hang-list .item:not(:last-child) pseudo class. Added the value property .hang-list .item:not(:last-child) pseudo class:
+    margin-right: 30px;
+17. Added .item class to <li> into "Hang" section.
+18. /Flex 8/ Added a .we-doing .list selector. Added the value property to .we-doing .list selector:
+    display: flex;
+19. /Flex 9/ Added a .our-team .list selector. Added the value property to .our-team .list selector:
+    display: flex;
+20. Added .item class to <li> into "Hero" section in "Portfolio" page.
