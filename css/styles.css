@@ -2,7 +2,7 @@
 /* Загальна блокова модель */
 html {
   /* Geometry */
-  box-sizing: border-dox;
+  box-sizing: border-box;
 }
 
 *,
@@ -315,7 +315,7 @@ body {
   /* Outline */
   /* outline: 2px solid red; */
   margin-top: 0;
-  margin-bottom: 10;
+  margin-bottom: 10px;
 
   /* Color, text */
   color: var(--title-text-color);
