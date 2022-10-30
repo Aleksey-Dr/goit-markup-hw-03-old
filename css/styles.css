@@ -31,10 +31,29 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* Виправлення ДЗ п.5 Обнуління для заголовків і піріграфу */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  /* Geometry */
+  margin-top: 0;
+}
+
+img {
+  /* Geometry */
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Class-utility .list - прибирає маркери у списках */
 .list {
   /* Geometry */
-  padding: 0;
+  padding-left: 0;
   margin: 0;
 
   /* Color, text */
@@ -54,7 +73,7 @@ body {
   margin: 0 auto;
 }
 
-/* Class-utility .link - прибирає підкреслення у посиланнях (in logo) */
+/* Class-utility .link - removed underline in link (in logo) */
 .link-decoration a {
   text-decoration: none;
 }
@@ -77,12 +96,8 @@ body {
 /* Classes logo */
 .logo {
   /* Geometry */
-  /* For user convenience */
-  /* Outline */
-  /* outline: 2px solid green; */
   display: block;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 24px;
   margin-right: 93px;
 
   /* Color, text */
@@ -99,19 +114,12 @@ body {
   color: #2196f3;
 }
 
-/* Removed default value space 4px in bottom in img */
-.imges {
-  /* Geometry */
-  display: block;
-}
-
 /* Styles for background */
+/* Виправлення ДЗ. п.1 Видалено падінги в хедері */
 .header-page {
   /* Geometry */
   /* Outline */
   /* outline: 2px solid green; */
-  padding-top: 19px;
-  padding-bottom: 20px;
   border-bottom: 1px solid #ececec;
 
   /* Color, text */
@@ -131,7 +139,7 @@ body {
 .nav-main {
   /* Geometry */
   display: flex;
-  align-items: center;
+  margin-bottom: 25px;
 }
 
 /* Flex 1 */
@@ -148,12 +156,9 @@ body {
 
 .nav-ul-site .link {
   /* Geometry */
-  /* Outline */
-  /* outline: 2px solid red; */
-  /* For user convenience */
+  /* Виправлення ДЗ. п.1 */
   display: block;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 32px;
 
   /* Color, text */
   color: var(--title-text-color);
@@ -177,6 +182,7 @@ body {
 .header-contacts {
   /* Geometry */
   display: flex;
+  margin-bottom: 25px;
   margin-left: auto;
 }
 
@@ -188,12 +194,9 @@ body {
 
 .header-contacts .link {
   /* Geometry */
-  /* Outline */
-  /* outline: 2px solid red; */
-  /* For user convenience */
+  /* Виправлення ДЗ. п.1 */
   display: block;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 32px;
 
   /* Color, text */
   color: var(--primary-text-color);
@@ -241,8 +244,6 @@ body {
 /* Hero section Studio */
 .hero-title {
   /* Geometry */
-  /* Outline */
-  /* outline: 2px solid red; */
   margin-top: 0;
   margin-bottom: 30px;
 
@@ -256,12 +257,15 @@ body {
   text-transform: uppercase;
 }
 
+/* Виправлення ДЗ. п.3 */
 .hero-button {
   /* Geometry */
-  /* outline */
-  /* outline: 2px solid red; */
+  display: flex;
+  width: 216px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
   /* Rounding */
-  padding: 10px 32px;
   border-radius: 4px;
   margin: auto;
 
@@ -275,8 +279,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 }
@@ -327,8 +329,6 @@ body {
 
 .hang-list p {
   /* Geometry */
-  /* Outline */
-  /* outline: 2px solid red; */
   margin-top: 0;
   margin-bottom: 0;
 
@@ -367,8 +367,6 @@ body {
 /* Our Team section */
 .our-team {
   /* Geometry */
-  /* Outline */
-  /* outline: 2px solid blue; */
   padding-top: 94px;
   padding-bottom: 94px;
 
@@ -389,8 +387,6 @@ body {
 
 .our-team p {
   /* Geometry */
-  /* Outline */
-  /* outline: 2px solid red; */
   margin-top: 0;
   margin-bottom: 0;
 
@@ -402,9 +398,6 @@ body {
 
 .our-names {
   /* Geometry */
-  /* Outline */
-  /* outline: 2px solid red;
-  margin-top: 30px; */
   margin-bottom: 10px;
 
   /* Color, text */
@@ -418,21 +411,25 @@ body {
 
 .container-team {
   /* Geometry */
-  /* Outline */
-  /* outline: 2px solid green; */
-  padding-bottom: 30px;
+  /* Виправлення ДЗ. п.4 Радіус */
+  border-radius: 4px;
 
   /* Color, text */
   background-color: #ffffff;
 }
 
+.container-team-div {
+  /* Geometry */
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 /* Footer */
 .footer-back {
   /* Geometry */
-  /* Outline */
-  /* outline: 2px solid red; */
-  padding-top: 55px;
-  padding-bottom: 55px;
+  /* Виправлення ДЗ. п.6 Змінено значення падінгів */
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   /* Color, text */
   background-color: #2f303a;
@@ -440,13 +437,9 @@ body {
 
 .logo-footer {
   /* Geometry */
-  /* Outline */
-  /* outline: 2px solid red; */
   display: block;
-  /* For user convenience */
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 11px;
+  /* Виправлення ДЗ. п.7 Видалено падінги. Значення марджин-боттом змінено на 20 пікселів */
+  margin-bottom: 20px;
 
   /* Color, text */
   color: #ffffff;
@@ -457,18 +450,15 @@ body {
   letter-spacing: 0.03em;
 }
 
-.address-footer .link,
-.contacts-footer {
-  /* Geometry */
+/* Виправлення ДЗ. п.8 Видалено падінги. Додано марджин-боттом 9 пікселів */
+.address-footer .item:not(:last-child) {
   display: block;
-  /* For user convenience */
-  padding-top: 4px;
-  padding-bottom: 5px;
+  margin-bottom: 9px;
 }
+
 .address-footer .link {
+  /* Color, text */
   color: #ffffff;
-  /* Outline */
-  /* outline: 2px solid red; */
 }
 
 .address-footer a {
@@ -478,8 +468,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  /* Outline */
-  /* outline: 2px solid red; */
 }
 
 .address-footer a:hover,
@@ -510,6 +498,8 @@ body {
 .portfolio-list {
   /* Geometry */
   justify-content: center;
+  /* Виправлення ДЗ. п.10 */
+  margin-bottom: 50px;
 }
 
 .portfolio .item-button:not(:last-child) {
@@ -518,9 +508,9 @@ body {
 
 .filter-button {
   /* Geometry */
-  /* Outline */
-  /* outline: 2px solid red; */
-  margin-bottom: 50px;
+  /* Виправлення ДЗ. п.9 */
+  padding: 6px 22px;
+  border: none;
 
   /* Color, text */
   color: var(--title-text-color);
@@ -552,8 +542,6 @@ body {
 /* Styles for title sections Prtfolio */
 .container-title {
   /* Geometry */
-  /* Outline */
-  /* outline: 2px solid green; */
   margin-top: 0;
   margin-bottom: 4px;
 
@@ -588,8 +576,6 @@ body {
 
 .container-portfolio p {
   /* Geometry */
-  /* Outline */
-  /* outline: 2px solid red; */
   margin-top: 0;
   margin-bottom: 0;
 
@@ -598,14 +584,12 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-
-  /* background-color: tomato; */
 }
 
 .container-border {
   /* Geometry */
-  padding-right: 24px;
-  padding-left: 24px;
+  /* Виправлення ДЗ. п.11 */
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
