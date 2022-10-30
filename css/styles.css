@@ -1,16 +1,19 @@
 /* All */
 /* Загальна блокова модель */
 html {
+  /* Geometry */
   box-sizing: border-dox;
 }
 
 *,
 *::before,
 *::after {
+  /* Geometry */
   box-sizing: inherit;
 }
 
 :root {
+  /* Color, text */
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
@@ -22,6 +25,7 @@ body {
   /* Remove default value margin: 8px; */
   margin: 0;
 
+  /* Color, text */
   background-color: #ffffff;
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
@@ -33,6 +37,7 @@ body {
   padding: 0;
   margin: 0;
 
+  /* Color, text */
   list-style: none;
 }
 
@@ -40,8 +45,11 @@ body {
 .container {
   /* Geometry */
   /* Outline */
-  outline: 2px solid blue;
+  /* outline: 2px solid blue; */
+  box-sizing: border-box;
   width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
   /* Centering */
   margin: 0 auto;
 }
@@ -87,6 +95,7 @@ body {
 }
 
 .logo-web {
+  /* Color, text */
   color: #2196f3;
 }
 
@@ -103,9 +112,10 @@ body {
   /* outline: 2px solid green; */
   padding-top: 19px;
   padding-bottom: 20px;
+  border-bottom: 1px solid #ececec;
 
   /* Color, text */
-  background-color: #ececec;
+  background-color: #ffffff;
 }
 
 /* Flex 5 */
@@ -203,7 +213,7 @@ body {
 .saction-title {
   /* Geometry */
   /* Outline */
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -220,7 +230,7 @@ body {
 .hero {
   /* Geometry */
   /* Outline */
-  outline: 2px solid blue;
+  /* outline: 2px solid blue; */
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -281,7 +291,7 @@ body {
 .hang {
   /* Geometry */
   /* Outline */
-  outline: 2px solid green;
+
   padding-top: 94px;
 }
 
@@ -291,6 +301,11 @@ body {
   display: flex;
 }
 
+/* Flex 10 */
+.hang-list .item {
+  width: 270px;
+}
+
 .hang-list .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -298,7 +313,7 @@ body {
 .hang-list .hang-title {
   /* Geometry */
   /* Outline */
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   margin-top: 0;
   margin-bottom: 10;
 
@@ -313,7 +328,7 @@ body {
 .hang-list p {
   /* Geometry */
   /* Outline */
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   margin-top: 0;
   margin-bottom: 0;
 
@@ -321,14 +336,13 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  background-color: blue;
 }
 
 /* What are we doing section */
 .we-doing {
   /* Geometry */
   /* Outline */
-  outline: 2px solid blue;
+
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -339,11 +353,22 @@ body {
   display: flex;
 }
 
+/* Geometry */
+.we-doing .item {
+  display: block;
+  width: 370px;
+}
+
+/* Geometry */
+.we-doing .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* Our Team section */
 .our-team {
   /* Geometry */
   /* Outline */
-  outline: 2px solid blue;
+  /* outline: 2px solid blue; */
   padding-top: 94px;
   padding-bottom: 94px;
 
@@ -357,10 +382,15 @@ body {
   display: flex;
 }
 
+/* Geometry */
+.our-team .container-team:not(:last-child) {
+  margin-right: 30px;
+}
+
 .our-team p {
   /* Geometry */
   /* Outline */
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   margin-top: 0;
   margin-bottom: 0;
 
@@ -373,8 +403,8 @@ body {
 .our-names {
   /* Geometry */
   /* Outline */
-  outline: 2px solid red;
-  margin-top: 30px;
+  /* outline: 2px solid red;
+  margin-top: 30px; */
   margin-bottom: 10px;
 
   /* Color, text */
@@ -389,7 +419,7 @@ body {
 .container-team {
   /* Geometry */
   /* Outline */
-  outline: 2px solid green;
+  /* outline: 2px solid green; */
   padding-bottom: 30px;
 
   /* Color, text */
@@ -400,29 +430,45 @@ body {
 .footer-back {
   /* Geometry */
   /* Outline */
-  outline: 2px solid red;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  /* outline: 2px solid red; */
+  padding-top: 55px;
+  padding-bottom: 55px;
 
   /* Color, text */
   background-color: #2f303a;
 }
 
 .logo-footer {
+  /* Geometry */
+  /* Outline */
+  /* outline: 2px solid red; */
+  display: block;
+  /* For user convenience */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 11px;
+
+  /* Color, text */
   color: #ffffff;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  /* Outline */
-  outline: 2px solid red;
 }
 
+.address-footer .link,
+.contacts-footer {
+  /* Geometry */
+  display: block;
+  /* For user convenience */
+  padding-top: 4px;
+  padding-bottom: 5px;
+}
 .address-footer .link {
   color: #ffffff;
   /* Outline */
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .address-footer a {
@@ -433,7 +479,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   /* Outline */
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .address-footer a:hover,
@@ -451,59 +497,36 @@ body {
 }
 
 /* Portfolio page */
-/* Styles for title sections Prtfolio */
 /* Hero section Prtfolio */
+
 .portfolio {
   /* Geometry */
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-/* .portfolio .list {
-  display: flex;
-} */
-
-.container-title {
-  /* Geometry */
-  /* Outline */
-  outline: 2px solid green;
-  margin-top: 0;
-  margin-bottom: 4px;
-
-  /* Color, text */
-  color: var(--title-text-color);
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.container-portfolio .link {
-  color: var(--primary-text-color);
-}
-
-.container-portfolio p {
-  /* Geometry */
-  /* Outline */
-  outline: 2px solid red;
-  margin-top: 0;
-  margin-bottom: 0;
-
-  /* Color, text */
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-}
-
 /* Buttons system */
+/* Flex 13 */
+.portfolio-list {
+  /* Geometry */
+  justify-content: center;
+}
+
+.portfolio .item-button:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter-button {
   /* Geometry */
   /* Outline */
-  outline: 2px solid red;
-  margin-bottom: 20px;
+  /* outline: 2px solid red; */
+  margin-bottom: 50px;
 
   /* Color, text */
   color: var(--title-text-color);
   background-color: #f5f4fa;
+  border-color: #f5f4fa;
+  border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -517,17 +540,72 @@ body {
 .filter-button:focus {
   color: #ffffff;
   background-color: #2196f3;
+  border-color: #2196f3;
 }
 
-/* Frame */
-/* .main-border {
-  border: 1px solid #ececec;
-} */
+/* Flex 11 */
+.portfolio .list {
+  /* Geometry */
+  display: flex;
+}
 
-.container-border > li {
+/* Styles for title sections Prtfolio */
+.container-title {
   /* Geometry */
   /* Outline */
-  padding-bottom: 20px;
-  margin-top: 30px;
+  /* outline: 2px solid green; */
+  margin-top: 0;
+  margin-bottom: 4px;
+
+  /* Color, text */
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* Flex 12 */
+.container-portfolio {
+  /* Geometry */
+  flex-wrap: wrap;
+}
+
+.container-portfolio .item {
+  /* Geometry */
+  display: block;
+  width: 370px;
+}
+
+/* Geometry */
+.container-portfolio .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+/* Geometry */
+.container-portfolio .item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.container-portfolio p {
+  /* Geometry */
+  /* Outline */
+  /* outline: 2px solid red; */
+  margin-top: 0;
+  margin-bottom: 0;
+
+  /* Color, text */
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  /* background-color: tomato; */
+}
+
+.container-border {
+  /* Geometry */
+  padding-right: 24px;
+  padding-left: 24px;
   border: 1px solid #eeeeee;
+  border-top: none;
 }

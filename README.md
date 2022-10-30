@@ -120,7 +120,7 @@ Repository for homework number 3
 14. Fixed the value property .header-page class:
 15. /Flex 7/ Added a .hang-list class. Added the value property .hang-list class:
     display: flex;
-16. Added a .hang-list .item:not(:last-child) pseudo class. Added the value property .hang-list .item:not(:last-child) pseudo class:
+16. Added a .hang-list .item:not(:last-child) pseudo-class. Added the value property .hang-list .item:not(:last-child) pseudo-class:
     margin-right: 30px;
 17. Added .item class to <li> into "Hang" section.
 18. /Flex 8/ Added a .we-doing .list selector. Added the value property to .we-doing .list selector:
@@ -128,3 +128,59 @@ Repository for homework number 3
 19. /Flex 9/ Added a .our-team .list selector. Added the value property to .our-team .list selector:
     display: flex;
 20. Added .item class to <li> into "Hero" section in "Portfolio" page.
+
+30/10/2022
+
+1.  Added the values properties .container class:
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
+2.  /Flex 10/ Added a .hang-list .item selector. Added the value property to .hang-list .item selector:
+    width: 270px;
+3.  /Flex 11/ Added a .portfolio .list selector. Added the value property to .portfolio .list selector:
+    display: flex;
+4.  /Flex 12/ Added a .container-portfolio selector. Added the value property to .container-portfolio selector:
+    flex-wrap: wrap;
+5.  /Geometry/ Added a .container-portfolio .link selector. Added the value property to .container-portfolio .item selector:
+    display: block;
+    width: 370px;
+6.  .container-border > li selector sent to comment.
+7.  /Geometry/ Added a .container-portfolio .item:not(:nth-child(3n)) structural pseudo-class. Added the value property to .container-portfolio .item:not(:nth-child(3n)) structural pseudo-class:
+    margin-right: 30px;
+8.  /Geometry/ Added a .container-portfolio .item:not(:nth-last-child(-n + 3)) structural pseudo-class. Added the value property to .container-portfolio .item:not(:nth-last-child(-n + 3)) structural pseudo-class:
+    margin-bottom: 30px;
+9.  Added .item class to <li> into "What are we doing" section in "Studio" page.
+10. /Geometry/ Added a .we-doing .item selector. Added the value property to .we-doing .item selector:
+    display: block;
+    width: 370px;
+11. /Geometry/ Added a .we-doing .item:not(:last-child) pseudo-class. Added the value property .we-doing .item:not(:last-child) pseudo-class:
+    margin-right: 30px;
+12. /Geometry/ Added the value property to .logo-footer class:
+    display: block;
+    For user convenience:
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+13. /Geometry/ Added a .footer-list class to <li> into <footer>.
+14. /Geometry/ Added a .address-footer .footer-list selector. Added the value property .address-footer .footer-list selector:
+    padding-bottom: 5px;
+15. /Geometry/ Fixed the value property .footer-back class:
+    padding-top: 60px to 55px;
+    padding-bottom: 60px to 55px;
+16. Added modern-normalize.min.css to "Studio" and "Portfolio" pages.
+17. Added the value property to .filter-button class:
+    border-color: #f5f4fa;
+    border-radius: 4px;
+18. Added the value property to .filter-button:hover,
+    .filter-button:focus class:
+    border-color: #2196f3;
+19. /Geometry/ Added a .portfolio .item-button:not(:last-child) pseudo-class. Added the value property .portfolio .item-button:not(:last-child) pseudo-class:
+    margin-right: 8px;
+20. Fixed the value property .filter-button class:
+    margin-bottom: 20px to 50px;
+21. /Flex 13/ Added a .portfolio-list class. Added the value property to ..portfolio-list class:
+    justify-content: center;
+22. Fixed the value property .header-page class:
+    background-color: #ececec; to #ffffff;.
+    Added the value property:
+    border-bottom: 1px solid #ececec;
