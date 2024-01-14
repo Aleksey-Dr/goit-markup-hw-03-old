@@ -1,5 +1,5 @@
 # goit-markup-hw-03
-
+[![Technologies](https://skillicons.dev/icons?i=html,css)](https://skillicons.dev)
 Repository for homework number 3
 
 23/10/2022
